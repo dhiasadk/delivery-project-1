@@ -1,6 +1,7 @@
-import styles from "./Article.module.css";
+import styles from "./LoginPage.module.css";
 import deliveryImage from "../assets/Delivery.jpg";
 import { useState } from "react";
+import { Link } from "react-router-dom"
 export default function Article() {
     const [fromData, setFromData] = useState({ email: "", password: "" });
 
@@ -38,7 +39,7 @@ export default function Article() {
 
                 <h1 className="text-2xl font-bold text-gray-800 mb-4">Welcome</h1>
                 <p className="text-sm text-gray-600 mb-4">You don't have an account yet ?
-                    <a href="#" className="text-purple-600 hover:underline"> Create acount</a>
+                    <Link to="/signup" className="text-purple-600 hover:underline"> Create acount</Link>
                 </p>
                 <form className="w-full space-y-4"
                     onSubmit={handleSubmit}
@@ -66,7 +67,7 @@ export default function Article() {
                         Login
                     </button>
                 </form>
-                <a href="#" className="block text-purple-600 mt-4 hover:underline">Forgot your password ?</a>
+                <Link to="/forgot-password" className="block text-purple-600 mt-4 hover:underline">Forgot your password ?</Link>
 
             </div>
         </article>

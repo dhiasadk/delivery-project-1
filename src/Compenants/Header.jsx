@@ -1,4 +1,5 @@
 import styles from "./header.module.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
@@ -8,8 +9,8 @@ export default function Header() {
 
 
             <div className="space-x-4">
-                <a href="#" className="px-4 py-2 bg-white text-purple-700 rounded-md border border-purple-700 hover:bg-purple-100 transition">Login</a>
-                <a href="#" className="px-4 py-2 bg-purple-700 text-white rounded-md hover:bg-purple-800 transition">Sign up</a>
+                <Link to="/" className="px-4 py-2 bg-white text-purple-700 rounded-md border border-purple-700 hover:bg-purple-100 transition">Login</Link>
+                <Link to="/signup" className="px-4 py-2 bg-purple-700 text-white rounded-md hover:bg-purple-800 transition">Sign up</Link>
             </div>
         </header>
     )
