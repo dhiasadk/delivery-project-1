@@ -2,7 +2,7 @@ import styles from "./LoginPage.module.css";
 import deliveryImage from "../assets/Delivery.jpg";
 import { useState } from "react";
 import { Link } from "react-router-dom"
-export default function Article() {
+export default function LoginPage() {
     const [fromData, setFromData] = useState({ email: "", password: "" });
 
     const handleChange = (e) => {
@@ -26,7 +26,7 @@ export default function Article() {
                 backgroundRepeat: "no-repeat",
             }}
         >
-            <div className="absolute inset-0 bg-black opacity-20"></div>
+            <div className="absolute inset-0 bg-black opacity-10"></div>
 
 
             <div className="relative z-10 flex flex-col items-center text-center bg-white bg-opacity-70 p-8 rounded-lg shadow-md w-full md:w-1/2 max-w-md" >
@@ -44,23 +44,30 @@ export default function Article() {
                 <form className="w-full space-y-4"
                     onSubmit={handleSubmit}
                 >
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={fromData.email}
-                        onChange={handleChange}
-                        placeholder="email@wasselni.tn"
-                        className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-purple-500" />
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        value={fromData.password}
-                        onChange={handleChange}
-                        placeholder="Password"
-                        className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-purple-500" />
+                    <div>
+                        <label className="block text-sm font-medium text-gray-700">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={fromData.email}
+                            onChange={handleChange}
+                            placeholder="email@wasselni.tn"
+                            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-purple-500" />
+                    </div>
+                    <div>
+                        <label className="block text-sm font-medium text-gray-700">Password</label>
 
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            value={fromData.password}
+                            onChange={handleChange}
+                            placeholder="*********"
+                            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-purple-500" />
+
+                    </div>
                     <button
                         type="submit"
                         className="hover-grow mt-4 w-full bg-purple-600 text-white py-2 rounded-md hover:bg-purple-700 transition duration-200 shadow-lg font-semibold">

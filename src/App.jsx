@@ -1,8 +1,11 @@
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from './Compenants/Header';
 import LoginPage from './Pages/LoginPage';
 import Footer from './Compenants/Footer';
+import SignUpPage from './Pages/SignupPage';
 import { BsRouter } from "react-icons/bs";
+
 
 function App() {
   return (
@@ -11,13 +14,13 @@ function App() {
         {/* Header */}
         <Header />
 
-        {/* Main Content Area */}
-        <main className="flex-1 flex items-center justify-center w-full">
-          <Route path="*" element={<h1 className="text-center text-red-500">404: Page Not Found</h1>} />
+        <main className="flex-1 flex items-center justify-center w-full ">
+          <Routes>
+            <Route path="/" element={<LoginPage />} />
+            <Route path="/signup" element={<SignUpPage />} />
 
-          <Route path="/" element={<LoginPage />} />
-          <Route path="/signup" element={<SignUpPage />} />
-          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+
+          </Routes>
         </main>
 
         {/* Footer */}
