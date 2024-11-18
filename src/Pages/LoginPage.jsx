@@ -44,29 +44,26 @@ export default function LoginPage() {
                 <form className="w-full space-y-4"
                     onSubmit={handleSubmit}
                 >
-                    <div>
+                    <div >
                         <label className="block text-sm font-medium text-gray-700">Email</label>
                         <input
                             type="email"
-                            id="email"
+                            placeholder="Xxxx@Wasselli.tn"
                             name="email"
                             value={fromData.email}
                             onChange={handleChange}
-                            placeholder="email@wasselni.tn"
-                            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-purple-500" />
+                            className="mt-1 w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500" />
                     </div>
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">Password</label>
 
+                    <div >
+                        <label className="block text-sm font-medium text-gray-700">Password</label>
                         <input
                             type="password"
-                            id="password"
+                            placeholder="**********"
                             name="password"
                             value={fromData.password}
                             onChange={handleChange}
-                            placeholder="*********"
-                            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-purple-500" />
-
+                            className="mt-1 w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500" />
                     </div>
                     <button
                         type="submit"

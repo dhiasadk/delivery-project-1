@@ -43,7 +43,7 @@ export default function SignUpPage() {
         >
 
 
-            <main className="w-full max-w-lg bg-white p-6 rounded-lg shadow-lg">
+            <main className="relative z-10 flex flex-col items-center bg-white bg-opacity-80 p-8 rounded-lg shadow-md w-full md:w-1/3 max-w-md">
 
 
                 <div className="flex justify-center mb-6">
