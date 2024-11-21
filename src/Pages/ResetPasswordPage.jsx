@@ -1,5 +1,6 @@
-import deliveryImage from "../assets/Delivery.jpg";
+import deliveryImage from "../assets/bachground.jpg";
 import { useNavigate } from "react-router-dom";
+import logoWasselli from "../assets/logo wasselli transparent.png";
 
 export default function ResetPasswordPage() {
     const navigate = useNavigate();
@@ -20,11 +21,8 @@ export default function ResetPasswordPage() {
         >
             <main className="relative z-10 flex flex-col items-center bg-white bg-opacity-80 p-8 rounded-lg shadow-md w-full md:w-1/3 max-w-md">
                 <div className="flex justify-center mb-6">
-                    < img
-                        src="#"
-                        alt="Company Logo"
-                        className="w-16 h-16"
-                    />                </div>
+                    <img src={logoWasselli} alt="Wasselli Logo" className="w-50 h-12" />
+                </div>
                 <h1 className="text-2xl font-bold text-gray-800 mb-4 text-center">Reset Your Password</h1>
                 <p className="text-gray-600 text-center mb-6"> Please enter your new password below</p>
                 <form onSubmit={handleSubmit}>
@@ -36,7 +34,7 @@ export default function ResetPasswordPage() {
                             type="password"
                             placeholder="Enter new password"
                             name="newPassword"
-                            className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500"
+                            className="mt-1 w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-[#FF8C00] focus:border-[#FF8C00] placeholder-gray-400" style={{ width: '300px' }}
                         />                    </div>
                     <div className="mb-4">
                         <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -46,12 +44,13 @@ export default function ResetPasswordPage() {
                             type="password"
                             placeholder="Confirm new password"
                             name="confirmPassword"
-                            className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500"
+                            className="mt-1 w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-[#FF8C00] focus:border-[#FF8C00] placeholder-gray-400" style={{ width: '300px' }}
                         />
                     </div>
                     <button
                         type="submit"
-                        className="w-full bg-purple-600 text-white py-2 rounded-lg font-semibold hover:bg-purple-700 transition duration-200"
+
+                        className="mt-4 w-full bg-[#FF8C00] text-white py-2 rounded-lg hover:bg-[#FFA500] hover:shadow-xl transition duration-200 font-bold"
                     >
                         Reset Password
                     </button>
@@ -59,7 +58,7 @@ export default function ResetPasswordPage() {
                 <div className="mt-6 text-center">
                     <a
                         href="/"
-                        className="text-purple-600 text-sm font-medium hover:underline"
+                        className="block text-[#FF8C00] mt-4 hover:text-[#FFA500] hover:underline font-medium transition duration-200"
                     >
                         Back to Login
                     </a>
