@@ -1,5 +1,3 @@
-import Article from './src/Compenants/Article';
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -10,6 +8,10 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-};
+  safelist: [
+    "translate-x-0",
+    "-translate-x-full",
+  ],
 
+};
 
