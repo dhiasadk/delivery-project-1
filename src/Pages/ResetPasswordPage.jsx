@@ -1,6 +1,6 @@
 import deliveryImage from "../assets/bachground.jpg";
 import { useNavigate } from "react-router-dom";
-import logoWasselli from "../assets/logo wasselli transparent.png";
+import logoWasselli from "../assets/logo_wasselli_transparent.png";
 
 export default function ResetPasswordPage() {
     const navigate = useNavigate();

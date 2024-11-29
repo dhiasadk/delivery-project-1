@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import deliveryImage from "../assets/bachground.jpg";
-import logoWasselli from "../assets/logo wasselli transparent.png";
+import logoWasselli from "../assets/logo_wasselli_transparent.png";
 
 export default function SignUpPage() {
     const [formData, setFormData] = useState({

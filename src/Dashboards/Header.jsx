@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaSearch, FaBell } from "react-icons/fa";
-import logoWasselli from "../assets/logo wasselli transparent.png";
+import logoWasselli from "../assets/logo_wasselli_transparent.png";
 
 export default function HeaderDashboard() {
     const [query, setQuery] = useState("");
@@ -47,13 +47,13 @@ export default function HeaderDashboard() {
                         placeholder="Search..."
                         value={query}
                         onChange={handleChange}
-                        className="w-full p-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-[#FF8C00] placeholder-gray-400 text-sm"
+                        className="w-full p-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-1 focus:ring-[#FF8C00] placeholder-gray-400 text-sm"
                     />
                     <button
                         type="submit"
                         className="px-4 py-2 bg-[#FF8C00] text-white rounded-r-lg hover:bg-[#FFA500] transition duration-200"
                     >
-                        <FaSearch size={20} />
+                        <FaSearch size={23} />
                     </button>
 
                     {suggestions.length > 0 && (

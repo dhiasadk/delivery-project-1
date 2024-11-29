@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { MdDashboard, MdPerson, MdLocalShipping, MdBarChart, MdDeliveryDining, MdPayment, MdHelp, MdNotifications, MdSettings } from "react-icons/md";
-import logoWasselli from "../assets/logo wasselli transparent.png";
+import logoWasselli from "../assets/logo_wasselli_transparent.png";
 import deliveryImage from "../assets/bachground.jpg";
-import FooterDashboard from "../Dashboards/Footer";
 
 export default function ClientDashboard() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);

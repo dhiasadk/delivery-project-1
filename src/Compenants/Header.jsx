@@ -1,11 +1,7 @@
 import { Link } from "react-router-dom";
-import logoWasselli from "../assets/logo wasselli transparent.png";
+import logoWasselli from "../assets/logo_wasselli_transparent.png";
 
 export default function Header() {
-
-
-
-
     return (
         <header
             className="bg-white shadow-md p-4 flex justify-between items-center transition-transform duration-300"

@@ -2,7 +2,6 @@ import styles from "./LoginPage.module.css";
 import deliveryImage from "../assets/bachground.jpg";
 import { useState } from "react";
 import { Link } from "react-router-dom"
-import logoWasselli from "../assets/logo wasselli transparent.png";
 
 export default function LoginPage() {
     const [fromData, setFromData] = useState({ email: "", password: "" });

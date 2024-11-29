@@ -11,6 +11,7 @@ import PasswordChangedPage from "./Pages/PasswordChangedPage";
 import ClientDashbord from "./ClientPages/ClientDashboard";
 import HeaderDashboard from "./Dashboards/Header";
 import FooterDashboard from "./Dashboards/Footer";
+import ClientProfil from "./ClientPages/ClientProfil";
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
     <div >
 
       <HeaderDashboard />
-      <ClientDashbord />
+      <ClientProfil />
+      {/* <ClientDashbord /> */}
       <FooterDashboard />
     </div>
     // <Router >
